@@ -1,47 +1,51 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-02-03T00:00:00Z",
-  "catalog_url": "https://your-org.com/spec-kit/catalog.json",
+  "updated_at": "2026-05-11T00:00:00Z",
+  "catalog_url": "https://github.com/PelicanJ03/spec-kit-sf/main/catalog.json",
   "extensions": {
-    "jira": {
-      "name": "Jira Integration",
-      "id": "jira",
-      "description": "Create Jira issues from spec-kit artifacts",
-      "author": "Your Organization",
-      "version": "2.1.0",
-      "download_url": "https://github.com/your-org/spec-kit-jira/archive/refs/tags/v2.1.0.zip",
-      "repository": "https://github.com/your-org/spec-kit-jira",
+"sf": {
+      "name": "SFSpeckit — Salesforce Spec-Driven Development",
+      "id": "sf",
+      "description": "Enterprise-Grade Spec-Driven Development (SDD) Framework for Salesforce.",
+      "author": "Sumanth Yanamala",
+      "version": "1.0.0",
+      "download_url": "https://github.com/ysumanth06/spec-kit-sf/archive/refs/tags/v1.0.0.zip",
+      "repository": "https://github.com/ysumanth06/spec-kit-sf",
+      "homepage": "https://ysumanth06.github.io/spec-kit-sf/",
+      "documentation": "https://ysumanth06.github.io/spec-kit-sf/introduction.html",
+      "changelog": "https://github.com/ysumanth06/spec-kit-sf/blob/main/CHANGELOG.md",
       "license": "MIT",
       "requires": {
-        "speckit_version": ">=0.1.0",
+        "speckit_version": ">=0.4.0",
         "tools": [
-          {"name": "atlassian-mcp-server", "required": true}
+          {
+            "name": "sf",
+            "version": ">=2.0.0",
+            "required": true
+          },
+          {
+            "name": "gh",
+            "version": ">=2.0.0",
+            "required": false
+          }
         ]
       },
       "provides": {
-        "commands": 3,
-        "hooks": 1
+        "commands": 18,
+        "hooks": 2
       },
-      "tags": ["jira", "atlassian", "issue-tracking"],
-      "verified": true
-    },
-    "internal-tool": {
-      "name": "Internal Tool Integration",
-      "id": "internal-tool",
-      "description": "Connect to internal company systems",
-      "author": "Your Organization",
-      "version": "1.0.0",
-      "download_url": "https://internal.your-org.com/extensions/internal-tool-1.0.0.zip",
-      "repository": "https://github.internal.your-org.com/spec-kit-internal",
-      "license": "Proprietary",
-      "requires": {
-        "speckit_version": ">=0.1.0"
-      },
-      "provides": {
-        "commands": 2
-      },
-      "tags": ["internal", "proprietary"],
-      "verified": true
+      "tags": [
+        "salesforce",
+        "enterprise",
+        "sdlc",
+        "apex",
+        "devops"
+      ],
+      "verified": false,
+      "downloads": 0,
+      "stars": 0,
+      "created_at": "2026-04-13T22:11:30Z",
+      "updated_at": "2026-04-13T22:11:30Z"
     }
   }
 }
