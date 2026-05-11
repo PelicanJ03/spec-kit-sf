@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-02-03T00:00:00Z",
+  "catalog_url": "https://your-org.com/spec-kit/catalog.json",
+  "extensions": {
+    "jira": {
+      "name": "Jira Integration",
+      "id": "jira",
+      "description": "Create Jira issues from spec-kit artifacts",
+      "author": "Your Organization",
+      "version": "2.1.0",
+      "download_url": "https://github.com/your-org/spec-kit-jira/archive/refs/tags/v2.1.0.zip",
+      "repository": "https://github.com/your-org/spec-kit-jira",
+      "license": "MIT",
+      "requires": {
+        "speckit_version": ">=0.1.0",
+        "tools": [
+          {"name": "atlassian-mcp-server", "required": true}
+        ]
+      },
+      "provides": {
+        "commands": 3,
+        "hooks": 1
+      },
+      "tags": ["jira", "atlassian", "issue-tracking"],
+      "verified": true
+    },
+    "internal-tool": {
+      "name": "Internal Tool Integration",
+      "id": "internal-tool",
+      "description": "Connect to internal company systems",
+      "author": "Your Organization",
+      "version": "1.0.0",
+      "download_url": "https://internal.your-org.com/extensions/internal-tool-1.0.0.zip",
+      "repository": "https://github.internal.your-org.com/spec-kit-internal",
+      "license": "Proprietary",
+      "requires": {
+        "speckit_version": ">=0.1.0"
+      },
+      "provides": {
+        "commands": 2
+      },
+      "tags": ["internal", "proprietary"],
+      "verified": true
+    }
+  }
+}
